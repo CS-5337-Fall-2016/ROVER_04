@@ -1,0 +1,21 @@
+# Ignore everything
+*
+.classpath
+.settings
+.project
+# But not these files...
+!.gitignore
+
+!src
+!src/
+!src/*
+!src/*/
+!src/*/*
+
+!libs
+!libs/
+!libs/*
+!libs/*/
+!libs/*/*
+
+!*.txt
