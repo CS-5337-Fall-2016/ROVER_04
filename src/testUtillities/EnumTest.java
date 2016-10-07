@@ -1,5 +1,4 @@
-
-
+package testUtillities;
 import enums.RoverName;
 
 public class EnumTest {

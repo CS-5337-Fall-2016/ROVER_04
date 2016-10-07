@@ -227,7 +227,7 @@ public class ROVER_04 {
                     {
                         if(!traverseJackpot)
                         {
-                            gatherInJackpot(scanMapTiles,centerIndex);
+                            //gatherInJackpot(scanMapTiles,centerIndex);
                             traverseJackpot=Boolean.TRUE;
                         }
                    
