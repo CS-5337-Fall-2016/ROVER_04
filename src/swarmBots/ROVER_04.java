@@ -22,6 +22,10 @@ import enums.RoverDriveType;
 import enums.RoverToolType;
 import enums.Science;
 import enums.Terrain;
+//import common.ScienceCoord;
+import communication.Group;
+import communication.RoverCommunication;
+
 
 /**
  * The seed that this program is built on is a chat program example found here:
@@ -30,7 +34,10 @@ import enums.Terrain;
  */
 
 public class ROVER_04 {
-
+    
+    Coord[] targetLocations = new Coord[3];
+    Coord target = null;
+    int i = 0;
     BufferedReader in;
     PrintWriter out;
     String rovername;
@@ -81,6 +88,12 @@ public class ROVER_04 {
 
             in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             out = new PrintWriter(socket.getOutputStream(), true);
+            
+    // * SET UP COMMUNICATION MODULE *****//
+   /* Group Info */
+	Group group = new Group(rovername, SERVER_ADDRESS, 53702, RoverDriveType.WALKER, RoverToolType.DRILL,
+			RoverScanType.RADIOACTIVE// ******************* SET UP COMMUNICATION MODULE
+	
      
             // Process all messages from server, wait until server requests Rover ID
             // name - Return Rover Name to complete connection
