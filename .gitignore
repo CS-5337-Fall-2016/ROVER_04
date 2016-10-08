@@ -1,21 +1,28 @@
+
 # Ignore everything
 *
-.classpath
-.settings
-.project
+
 # But not these files...
 !.gitignore
 
 !src
 !src/
 !src/*
-!src/*/
-!src/*/*
+!src/**
 
 !libs
 !libs/
 !libs/*
-!libs/*/
-!libs/*/*
+!libs/**
+
+!Maps
+!Maps/
+!Maps/*
+!Maps/**
 
 !*.txt
+
+# MAC HIDDEN FILES
+.DS_Store
+
+#but do ignore this file
