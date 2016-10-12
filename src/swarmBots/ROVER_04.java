@@ -135,6 +135,7 @@ public class ROVER_04 {
                
             }
             System.out.println(rovername + " START_LOC " + rovergroupStartPosition);
+				System.out.println("test");
            
            
             // **** Request TARGET_LOC Location from SwarmServer ****
