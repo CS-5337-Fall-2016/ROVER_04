@@ -285,7 +285,7 @@ public class ROVER_04 {
                     }
                 }
                 else {
-                	List<String> positions = logicA.Astar(cLoc, destination, scanMapTiles, RoverDriveType.WALKER, globalMap);
+                	List<String> positions = logicA.Astar(cLoc, tLoc, scanMapTiles, RoverDriveType.WALKER, globalMap);
                     
                     //System.out.println(rovername + " moves: " + positions.toString());
                     
